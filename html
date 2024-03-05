@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Site</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form id="ticketForm">
+        <select id="ticketType">
+            <option value="computer">Computer</option>
+            <option value="software">Software</option>
+            <option value="network">Network</option>
+        </select>
+        <div id="computerFields" style="display: none;">
+            <!-- Computer-related fields -->
+            <input type="text" placeholder="Computer Model">
+            <input type="text" placeholder="Issue Description">
+        </div>
+        <div id="softwareFields" style="display: none;">
+            <!-- Software-related fields -->
+            <input type="text" placeholder="Software Version">
+            <input type="text" placeholder="Issue Description">
+        </div>
+        <div id="networkFields" style="display: none;">
+            <!-- Network-related fields -->
+            <input type="text" placeholder="Network Device">
+            <input type="text" placeholder="Issue Description">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
